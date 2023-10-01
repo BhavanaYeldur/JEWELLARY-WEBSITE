@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+          color:aliceblue;
+          font-family:Arial, Helvetica, sans-serif ;
+          font-weight: bold;
+          font-size: medium;
+          letter-spacing:normal;
+          text-align: center;
+          text-decoration:underline;
+          text-shadow: 0px 0px orange;
+          animation-name: blink;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          text-decoration-color: brown;
+      }  
+      
+      a{
+          color:white;
+          text-decoration: none;
+          font-size: 20px;
+      }
+      a:hover{
+          color:aqua;
+          text-decoration: underline;
+      }
+      .aa:hover{
+          background-color: coral;
+      }
+      body{
+        background-image: url(Images/2.jpg);
+        background-repeat:no-repeat;
+        background: size 90px; 
+      }
+      
+      
+     .zoomed {
+      transform: scale(1.5); 
+      transition: transform 0.5s ease; 
+      cursor: zoom-out;
+      }
+      
+      .bb{
+        background-color: white;
+      }
+      .aa{
+        background-color: rgb(42, 36, 36);
+      }
+    </style>
+
+
+      
+
+    </style>
+    </head>
+     <Sbody>
+    <table border="1" height="160px" width="100%" bgcolor="Black" >
+    <tr> 
+        <td width="30%"> <img src="Images/logo png.jpg" height="160px" width="100%"> </td>
+        <td width="30%" align="center" class="aa" ><h1> TANISHQ JEWELLARY </h1></td>
+       <td width="10%"  align="center" class="aa"><a href="#">Home</a></td>
+       <td width="10%"  align="center" class="aa"><a href="#">Contact</a></td>
+       <td width="10%"  align="center" class="aa"><a href="#">Address</a></td>
+       <td width="10%"  align="center" class="aa"><a href="#">About us</a></td>
+       <td></td>
+       
+    </tr>
+  </table>
+
+  <table border="0" height="600px" width="100%" >
+    <tr> 
+       <td width="100%"> <img src="Images/1.webp" height="600px" width="100%"> </td>
+    </tr>
+  </table>
+   <table>
+  <td width="20%" align="center"  >
+    <h4>best Price</h4>
+    <img src="Images/7.jpg" id="ringImage" onclick="toggleZoom('ringImage')">
+    <h4>Necklace</h4>
+  </td>
+  <td width="20%" align="center" >
+    <h4>best Price</h4>
+    <img src="Images/8.jpg" id="bangleImage" onclick="toggleZoom('bangleImage')">
+    <h4>Rings</h4>
+  </td>
+  <td width="20%" align="center">
+    <h4>best Price</h4>
+    <img src="Images/5.jpg" id="necklaceImage" onclick="toggleZoom('necklaceImage')">
+    <h4>Bangles</h4>
+  </td>
+  </table>
+  
+
+  </table>
+  
+
+  <table border="0" height="300px" width="100%">
+    <tr> 
+       <td width="50%">
+        <p>Every Tanishq ornament has the logo engraved which helps them identify originality. We had an older piece of jewellery to exchange, however, it was a non-Tanishq piece, here's how they did it: First, the executive placed the ornament in a purity measuring machine called karatmeter</p></td>
+       <td  width="50%"><img src="Images/9.webp" height="300px" width="100%"></td>
+    </tr>
+  </table>
+
+  <table border="0" height="600px" width="100%" >
+    <tr> 
+       <td width="100%"> <img src="Images/2.jpg" height="600px" width="100%"> </td>
+    </tr>
+  </table>
+   <table  border="0" width="100%" cellpadding="20px" cellspacing="20px" bgcolor="grey">
+    <h2 align="left" >OUR JEWELLARY  </h2> 
+    <td width="30%" align="center" class="bb">
+      <h4>Necklace</h4>
+      <img src="Images/7.jpg" id="ringImage" onclick="toggleZoom('ringImage')">
+      <h4>Rs 10000</h4>
+      <button type="button">Buy Now</button> 
+  </td>
+  
+  </td>
+  <td width="30%" align="center" class="bb">
+    <h4>Rings</h4>
+    <img src="Images/8.jpg" id="bangleImage" onclick="toggleZoom('bangleImage')">
+    <h4>Rs 20000</h4>
+    <button type="button">Buy Now</button> 
+  </td>
+  <td width="30%" align="center" class="bb">
+    <h4>Bangles</h4>
+    <img src="Images/5.jpg" id="necklaceImage" onclick="toggleZoom('necklaceImage')">
+    <h4>Rs 30000</h4>
+    <button type="button">Buy Now</button> 
+  </td>
+  </table>
+  
+
+
+  <script>
+    // Function to toggle zoom state
+    function toggleZoom(imageId) {
+      var image = document.getElementById(imageId);
+      image.classList.toggle("zoomed");
+    }
+  </script>
+
+
+  <table border="0" height="60px" width="100%" bgcolor="white">
+  <tr>
+    <td width="50%" align="center" class="bb">
+        <form action="process.php" method="post" align="center">
+            <h2 align="center">CONTACT US</h2>
+            <label for="name" >   </label>
+            <input type="text" id="name" name="name" value="Name" ><br><br>
+    
+            <label for="email">   </label>
+            <input type="email" id="email" name="email" value="Email"><br><br>
+    
+            <label for="Phone">    </label>
+            <input type="Phone" id="Phone" name="Phone" value="Phone"><br><br>
+    
+            <label for="address">   </label>
+            <textarea cols="20" rows="5">  </textarea>
+        </form>
+    
+    </td>
+
+ <td width="50%" align="center" class="bb" >
+    <iframe src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+
+
+
+ </td>
+ 
+
+
+
+ </tr>
+ 
+
+
+
+</table>
+
+</body>
+
+</html>
